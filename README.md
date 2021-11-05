@@ -1,8 +1,13 @@
 # Yakusu Toshiko
+![Main menu](https://i.ibb.co/KbbDzg1/image.png)
+
 Translator based on Google API.
 Instance of this bot is running as [@yakusubot](https://t.me/yakusubot).
 
-![Main menu](https://i.ibb.co/KbbDzg1/image.png)
+## Features
+* Add a plus to a language's name to show an original text too
+* Instantly translate text with Google.Translate API
+* No telemetry for Google
 
 ## How to use
 1. **Write a language**
