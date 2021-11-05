@@ -1,0 +1,6 @@
+[flake8]
+exclude =
+    translate/__init__.py
+per_file_ignores =
+    ./bot.py: S303, F403, WPS318, WPS319, WPS347, WPS519
+max_try_body_length = 2
