@@ -29,7 +29,7 @@ This is a bot created by @arisetta.
 @yakusubot Japanese
 
 2. Type in your text to translate:
-@yakusu Japanese Hello, World!
+@yakusubot Japanese Hello, World!
  Hint: You can add a plus to a language's name to show an original text too.
 """
 
@@ -126,7 +126,7 @@ async def cmd_start(message: aiogram.types.Message):
             '\n2. Type in your text to translate:',
             hpre('@yakusubot Japanese Hello, World!'),
             hbold(htext(
-                "Hint: You can add a plus to a language's name to show",
+                "\nHint: You can add a plus to a language's name to show",
                 'an original text too.',
             )),
         ),
