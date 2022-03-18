@@ -2,7 +2,8 @@
 exclude =
     translate/__init__.py
 per_file_ignores =
-    ./bot.py: S303, F403, WPS318, WPS319, WPS347, WPS519
+    ; S324 - Use of weak MD4, MD5, or SHA1 hash (warning)
+    ./bot.py: S303, S324, F403, WPS318, WPS319, WPS347, WPS519
     ; S101 - assert usage (information)
     test/*.py: S101
 max_try_body_length = 2
