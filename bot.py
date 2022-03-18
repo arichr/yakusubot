@@ -14,7 +14,7 @@ import translate
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
-with open('.login') as login:
+with open('login.json') as login:
     login_data = json.load(login)
     API_TOKEN = login_data['key']
 
@@ -30,7 +30,7 @@ This is a bot created by @arisetta.
 
 2. Type in your text to translate:
 @yakusubot Japanese Hello, World!
- Hint: You can add a plus to a language's name to show an original text too.
+Hint: You can add a plus to a language's name to show an original text too.
 """
 
 

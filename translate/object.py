@@ -1,4 +1,4 @@
-"""Dataclasses for translated texts."""
+"""Dataclasses for the translator."""
 from dataclasses import dataclass
 
 

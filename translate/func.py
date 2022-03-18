@@ -1,4 +1,4 @@
-"""Functions for translations."""
+"""Main functions for requesting Google.Translate."""
 from http import client as status
 
 import aiohttp
@@ -55,7 +55,11 @@ def get_language(raw: str, languages: dict) -> Language:
                 return Language(code, name)
 
 
-async def translate(target: Language, text: str, show_original: bool):
+async def translate(
+    target: Language,
+    text: str,
+    show_original=False,
+) -> Translation:
     """Translate text.
 
     Parameters:
@@ -98,7 +102,7 @@ async def translate(target: Language, text: str, show_original: bool):
 
 
 async def from_raw(raw_query: str) -> Translation:
-    """Parse a raw query.
+    """Parse a raw Telegram query.
 
     Parameters:
         raw_query: str
@@ -116,7 +120,7 @@ async def from_raw(raw_query: str) -> Translation:
             text='Missing a target language. Please, specify it next time.',
         )
 
-    target = raw_query[:cut_pos]
+    target = raw_query[:cut_pos].title()
     text = raw_query[cut_pos+1:]
 
     show_original = target[-1] == '+'

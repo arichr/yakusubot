@@ -1,5 +1,5 @@
-"""Google.Translate module for internal usage."""
-from translate.func import from_raw
+"""Google.Translate module."""
+from translate.func import from_raw, translate, list_languages, get_language
 from translate.object import Translation
 
 __all__ = [
