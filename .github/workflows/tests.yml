@@ -23,5 +23,5 @@ jobs:
         flake8 .
     - name: Running tests
       run: |
-        pytest --cov=yakusubot
+        pytest --cov=translate
         coveralls
