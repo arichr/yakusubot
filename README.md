@@ -1,5 +1,6 @@
 # Yakusu Toshiko
-![Main menu](https://i.ibb.co/KbbDzg1/image.png)
+[![Coverage Status](https://img.shields.io/coveralls/github/arichr/yakusubot?logo=coveralls)](https://coveralls.io/github/arichr/yakusubot?branch=main)
+[![License](https://img.shields.io/github/license/arichr/yakusubot)](https://github.com/arichr/yakusubot/blob/main/LICENSE)
 
 Translator based on Google API.
 The public instance of this bot is running as [@yakusubot](https://t.me/yakusubot).
@@ -10,6 +11,7 @@ The public instance of this bot is running as [@yakusubot](https://t.me/yakusubo
 * No telemetry for Google
 
 ## Screenshots
+![Main menu](https://i.ibb.co/KbbDzg1/image.png)
 ![Language](https://i.ibb.co/ykWb1Xh/image.png)
 ![Your text](https://i.ibb.co/HtZSDrb/image.png)
 
