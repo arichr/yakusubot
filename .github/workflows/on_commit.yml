@@ -1,6 +1,9 @@
-name: Tests
+name: CI/CD
 
 on: [push]
+
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
 jobs:
   build:
@@ -16,7 +19,6 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
         pip install -r dev-requirements.txt
     - name: Linting with Flake8
       run: |
