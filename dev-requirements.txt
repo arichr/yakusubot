@@ -5,3 +5,4 @@ coveralls==3.3.1
 flake8==4.0.1
 wemake-python-styleguide==0.16.1
 aiohttp<3.9.0,>=3.8.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
